@@ -13,6 +13,8 @@
 		00CE79DF2A5136B3009CA570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CE79DE2A5136B3009CA570 /* Preview Assets.xcassets */; };
 		00CE79E12A5136B3009CA570 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79E02A5136B3009CA570 /* Persistence.swift */; };
 		00CE79E42A5136B3009CA570 /* SquareUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79E22A5136B3009CA570 /* SquareUp.xcdatamodeld */; };
+		00CE79EC2A51FC47009CA570 /* MeasurementGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79EB2A51FC47009CA570 /* MeasurementGridCell.swift */; };
+		00CE79EE2A5201C6009CA570 /* AddMeasurementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		00CE79E02A5136B3009CA570 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		00CE79E32A5136B3009CA570 /* SquareUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SquareUp.xcdatamodel; sourceTree = "<group>"; };
 		00CE79E52A5136B3009CA570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CE79EB2A51FC47009CA570 /* MeasurementGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementGridCell.swift; sourceTree = "<group>"; };
+		00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				00CE79E52A5136B3009CA570 /* Info.plist */,
 				00CE79E22A5136B3009CA570 /* SquareUp.xcdatamodeld */,
 				00CE79DD2A5136B3009CA570 /* Preview Content */,
+				00CE79EB2A51FC47009CA570 /* MeasurementGridCell.swift */,
+				00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */,
 			);
 			path = SquareUp;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 			files = (
 				00CE79E12A5136B3009CA570 /* Persistence.swift in Sources */,
 				00CE79DA2A5136B2009CA570 /* ContentView.swift in Sources */,
+				00CE79EE2A5201C6009CA570 /* AddMeasurementButton.swift in Sources */,
 				00CE79D82A5136B2009CA570 /* SquareUpApp.swift in Sources */,
 				00CE79E42A5136B3009CA570 /* SquareUp.xcdatamodeld in Sources */,
+				00CE79EC2A51FC47009CA570 /* MeasurementGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

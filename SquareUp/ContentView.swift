@@ -15,10 +15,20 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
         NavigationView {
-            List {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    AddMeasurementButton()
+                    ForEach(items) { item in
+                        MeasurementGridCell()
+                    }
+                }
+            }
+            /* List {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -37,8 +47,7 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
-            }
-            Text("Select an item")
+            } */
         }
     }
 
