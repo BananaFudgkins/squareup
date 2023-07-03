@@ -12,7 +12,7 @@ struct MeasurementGridCell: View {
         VStack {
             Image(systemName: "photo")
                 .resizable()
-                .frame(maxWidth: 400.0, maxHeight: 400.0)
+                .aspectRatio(contentMode: .fit)
             VStack(alignment: .leading, spacing: 5.0) {
                 HStack {
                     Text("Object Name")
@@ -25,7 +25,9 @@ struct MeasurementGridCell: View {
                     .multilineTextAlignment(.leading)
             }
         }
-        .padding(.horizontal, 15)
+        .padding()
+        .cornerRadius(10)
+        .border(.foreground, width: 5)
     }
 }
 

@@ -11,17 +11,15 @@ struct AddMeasurementButton: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.gray)
+                .foregroundColor(Color(uiColor: .systemGray2))
             Button {
                 print("DO SOMETHING TWITTER BE LIKE")
             } label: {
-                VStack(spacing: 10.0) {
-                    Image(systemName: "plus.circle.fill")
-                    Text("Add Measurement")
-                }
+                Label("Add Measurement", systemImage: "plus.circle.fill")
+                    .font(.title2)
             }
-
         }
+        .clipShape(RoundedRectangle(cornerRadius: 10.0))
     }
 }
 

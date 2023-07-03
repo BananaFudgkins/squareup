@@ -25,29 +25,20 @@ struct ContentView: View {
                     AddMeasurementButton()
                     ForEach(items) { item in
                         MeasurementGridCell()
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                    }
+                    .onDelete { indexes in
+                        print("Yo what's up")
                     }
                 }
+                .padding(.horizontal, 15)
             }
-            /* List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
+            .navigationTitle(Text("Measurements"))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            } */
+            }
         }
     }
 
