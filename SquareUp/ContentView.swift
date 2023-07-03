@@ -17,6 +17,8 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    
+    @State private var isEditing = false
 
     var body: some View {
         NavigationView {
@@ -36,7 +38,11 @@ struct ContentView: View {
             .navigationTitle(Text("Measurements"))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                    Button(isEditing ? "Done" : "Edit") {
+                        withAnimation {
+                            isEditing.toggle()
+                        }
+                    }
                 }
             }
         }

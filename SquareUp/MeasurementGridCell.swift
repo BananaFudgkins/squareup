@@ -26,8 +26,8 @@ struct MeasurementGridCell: View {
             }
         }
         .padding()
-        .cornerRadius(10)
-        .border(.foreground, width: 5)
+        .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(lineWidth: 3))
     }
 }
 
