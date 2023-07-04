@@ -19,12 +19,17 @@ struct ContentView: View {
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     @State private var isEditing = false
+    @State private var showingNewItemForm = false
 
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    AddMeasurementButton()
+                    Button {
+                        showingNewItemForm.toggle()
+                    } label: {
+                        AddMeasurementButton()
+                    }
                     ForEach(items) { item in
                         MeasurementGridCell()
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -35,9 +40,12 @@ struct ContentView: View {
                 }
                 .padding(.horizontal, 15)
             }
+            .sheet(isPresented: $showingNewItemForm) {
+                NewMeasurementForm()
+            }
             .navigationTitle(Text("Measurements"))
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Button(isEditing ? "Done" : "Edit") {
                         withAnimation {
                             isEditing.toggle()

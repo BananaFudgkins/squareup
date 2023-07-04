@@ -12,12 +12,8 @@ struct AddMeasurementButton: View {
         ZStack {
             Rectangle()
                 .foregroundColor(Color(uiColor: .systemGray2))
-            Button {
-                print("DO SOMETHING TWITTER BE LIKE")
-            } label: {
                 Label("Add Measurement", systemImage: "plus.circle.fill")
                     .font(.title2)
-            }
         }
         .clipShape(RoundedRectangle(cornerRadius: 10.0))
     }
