@@ -20,6 +20,7 @@ struct ContentView: View {
     
     @State private var isEditing = false
     @State private var showingNewItemForm = false
+    @State private var searchText = ""
 
     var body: some View {
         NavigationView {
@@ -39,6 +40,7 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal, 15)
+                .searchable(text: $searchText, prompt: "Search for a measurement")
             }
             .sheet(isPresented: $showingNewItemForm) {
                 NewMeasurementForm()
