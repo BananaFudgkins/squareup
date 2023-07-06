@@ -17,6 +17,7 @@
 		00CE79EE2A5201C6009CA570 /* AddMeasurementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */; };
 		00CE79F02A526C0A009CA570 /* NewMeasurementForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79EF2A526C0A009CA570 /* NewMeasurementForm.swift */; };
 		00CE79F22A53B76B009CA570 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79F12A53B76B009CA570 /* SqueezeNet.mlmodel */; };
+		00CE79F42A5763F4009CA570 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE79F32A5763F4009CA570 /* Unit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementButton.swift; sourceTree = "<group>"; };
 		00CE79EF2A526C0A009CA570 /* NewMeasurementForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementForm.swift; sourceTree = "<group>"; };
 		00CE79F12A53B76B009CA570 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		00CE79F32A5763F4009CA570 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				00CE79EB2A51FC47009CA570 /* MeasurementGridCell.swift */,
 				00CE79ED2A5201C6009CA570 /* AddMeasurementButton.swift */,
 				00CE79EF2A526C0A009CA570 /* NewMeasurementForm.swift */,
+				00CE79F32A5763F4009CA570 /* Unit.swift */,
 			);
 			path = SquareUp;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				00CE79F02A526C0A009CA570 /* NewMeasurementForm.swift in Sources */,
 				00CE79E12A5136B3009CA570 /* Persistence.swift in Sources */,
 				00CE79DA2A5136B2009CA570 /* ContentView.swift in Sources */,
+				00CE79F42A5763F4009CA570 /* Unit.swift in Sources */,
 				00CE79F22A53B76B009CA570 /* SqueezeNet.mlmodel in Sources */,
 				00CE79EE2A5201C6009CA570 /* AddMeasurementButton.swift in Sources */,
 				00CE79D82A5136B2009CA570 /* SquareUpApp.swift in Sources */,

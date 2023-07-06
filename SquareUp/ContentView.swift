@@ -35,9 +35,6 @@ struct ContentView: View {
                         MeasurementGridCell()
                             .frame(minWidth: 0, maxWidth: .infinity)
                     }
-                    .onDelete { indexes in
-                        print("Yo what's up")
-                    }
                 }
                 .padding(.horizontal, 15)
                 .searchable(text: $searchText, prompt: "Search for a measurement")

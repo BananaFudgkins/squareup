@@ -4,7 +4,7 @@
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <entity name="Measurement" representedClassName="Measurement" syncable="YES" codeGenerationType="class">
-        <attribute name="distance" attributeType="Integer 64" defaultValueString="69" usesScalarValueType="YES"/>
+        <attribute name="distance" attributeType="Float" defaultValueString="69" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="timestamp" attributeType="Date" defaultDateTimeInterval="709965840" usesScalarValueType="NO"/>
         <attribute name="units" attributeType="String" defaultValueString="IN"/>
