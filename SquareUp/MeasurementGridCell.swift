@@ -10,19 +10,22 @@ import SwiftUI
 struct MeasurementGridCell: View {
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                Text("Timestamp")
+                    .multilineTextAlignment(.trailing)
+            }            
             Image(systemName: "photo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            VStack(alignment: .leading, spacing: 5.0) {
-                HStack {
+            HStack {
+                VStack(alignment: .leading, spacing: 5.0) {
                     Text("Object Name")
                         .multilineTextAlignment(.leading)
-                    Spacer()
-                    Text("Timestamp")
-                        .multilineTextAlignment(.trailing)
+                    Text("Measurement + Units")
+                        .multilineTextAlignment(.leading)
                 }
-                Text("Measurement + Units")
-                    .multilineTextAlignment(.leading)
+                Spacer()
             }
         }
         .padding()
