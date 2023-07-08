@@ -11,7 +11,7 @@ struct AddMeasurementButton: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(Color(uiColor: .systemGray2))
+                .foregroundColor(Color(uiColor: .systemGray4))
                 Label("Add Measurement", systemImage: "plus.circle.fill")
                     .font(.title2)
         }
